@@ -1,0 +1,6 @@
+services:
+  python:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    volumes:
+      - ..:/workspace
+    tty: true

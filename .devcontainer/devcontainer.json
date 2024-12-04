@@ -1,0 +1,26 @@
+{
+    "name": "kishida-zemi",
+    "dockerComposeFile": "compose.yml",
+    "service": "python",
+    "workspaceFolder": "/workspace",
+
+    "features": {
+        "ghcr.io/devcontainers/features/python:1.6.5": {}
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "janisdd.vscode-edit-csv"
+                // "ms-python.vscode-pylance",
+                // "ms-python.pylint",
+                // "editorconfig.editorconfig",
+                // "davidanson.vscode-markdownlint"
+            ]
+        }
+    },
+
+    "postCreateCommand": "/bin/bash .devcontainer/init.sh"
+}
